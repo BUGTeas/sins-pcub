@@ -1,6 +1,6 @@
 {
     "pack": {
-            "pack_format": 15,
-            "description": "盘灵无界互通功能修复扩展（数据包）"
+        "pack_format": 15,
+        "description": "盘灵无界互通 DLC 兼容扩展（适用于便捷元素银行 v2024.2.6 及罪如歌 v2023.10.1）"
     }
 }
