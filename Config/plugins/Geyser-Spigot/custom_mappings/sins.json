@@ -1,0 +1,20 @@
+{
+	"format_version": "1",
+	"items": {
+		//剑歌DLC（罪如歌）
+		"minecraft:carrot_on_a_stick": [
+			{
+				"name": "redstone_dust",
+				"custom_model_data": 2385,
+                "texture_size": 52,
+				"allow_offhand": false
+			}
+		],
+		"minecraft:red_banner": [
+			{
+				"name": "jg_red_banner",
+				"custom_model_data": 1
+			}
+		]
+	}
+}

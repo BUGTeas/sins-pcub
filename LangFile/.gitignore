@@ -1,0 +1,6 @@
+/node_modules/
+/output/
+/resources/*
+!/resources/sins/
+/resources/sins/*
+!/resources/sins/NOTICE

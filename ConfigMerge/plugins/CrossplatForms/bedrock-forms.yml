@@ -1,0 +1,190 @@
+forms:
+  #罪如歌
+  #诡秘挑战主菜单
+  dark_fight_menu:
+    type: simple_form
+    title: "pcub.title.dark_fight"
+    content: "§a§l● 挑战说明\n§r你可以通过第一页的§b[挑战列表]§r来选择这场战斗中的[挑战词条]，开始战斗时,若你距离按钮最近,则你选择的所有§b[挑战词条]§r等级的§b总和§r即为你们本次战斗的§b[诡秘挑战等级]。\n例:§eCreazeny§r战斗开始时§b距离按钮最近§r并选择了§b三§r个§b三§r级[挑战],则他与另外两名队友的最终挑战难度为:§b[诡秘挑战-九]§r。\n\n§a§l● 挑战等级\n§r全名为§b诡秘挑战等级§r,其是你力量的体现,亦是你与同伴共同挑战过高难度副本的证明,当你突破自我,达到部分等级时,将会获得§c罪之石§r的奖励,且当战斗结束时,每§b1§r级§b诡秘挑战等级§r都将提供§b3%%§r的概率获得一颗§c罪之石\n\n§7§l若丢失了这本书....那恐怕很难得到第二本了\n"
+    buttons: 
+      - text: "pcub.dark_fight.dark_tag"
+        actions:
+          - form: dark_tag_menu
+      - text: "pcub.dark_fight.tag_show"
+        actions:
+          - commands: "player; trigger dark_tag_show set 1"
+      - text: "pcub.dark_fight.tag_clear"
+        actions:
+          - commands: "player; trigger dark_tag_clear set 1"
+  #诡秘挑战词条列表
+  dark_tag_menu:
+    type: custom_form
+    title: "pcub.title.dark_tag"
+    components:
+      - type: label
+        text: "pcub.content.dark_tag"
+      - type: step_slider
+        text: "协奏歌"
+        default-step: "%objective_score_{dark_tag_1}%"
+        steps:
+          - " 0"
+          - " 1"
+          - " 2"
+          - " 3"
+      - type: label
+        text: "0： §7不使用§r\n1： §a所有敌人生命上限+50%%,移动速度+10%%§r\n2： §b所有敌人生命上限+100%%,移动速度+20%%§r\n3： §c所有敌人生命上限+200%%,移动速度+40%%\n\n"
+      - type: step_slider
+        text: "狂想语"
+        default-step: "%objective_score_{dark_tag_2}%"
+        steps:
+          - " 0"
+          - " 1"
+          - " 2"
+          - " 3"
+      - type: label
+        text: "0： §7不使用§r\n1： §a所有玩家生命上限、护甲与护甲韧性-20%%§r\n2： §b所有玩家生命上限、护甲与护甲韧性-30%%§r\n3： §c所有玩家生命上限、护甲与护甲韧性-50%%\n\n"
+      - type: step_slider
+        text: "变奏曲"
+        default-step: "%objective_score_{dark_tag_3}%"
+        steps:
+          - " 0"
+          - " 1"
+          - " 2"
+          - " 3"
+      - type: label
+        text: "0： §7不使用§r\n1： §a所有玩家进攻属性-20%%,移动速度-10%%§r\n2： §b所有玩家进攻属性-40%%,移动速度-20%%§r\n3： §c所有玩家进攻属性-60%%,移动速度-30%%\n\n"
+      - type: step_slider
+        text: "回声壁"
+        default-step: "%objective_score_{dark_tag_4}%"
+        steps:
+          - " 0"
+          - " 1"
+          - " 2"
+          - " 3"
+      - type: label
+        text: "0： §7不使用§r\n1： §a所有敌人获得抗性提升I,移动速度-10%%§r\n2： §b所有敌人获得抗性提升II,移动速度-20%%§r\n3： §c所有敌人获得抗性提升IV,移动速度-40%%\n\n"
+      - type: step_slider
+        text: "余响言"
+        default-step: "%objective_score_{dark_tag_5}%"
+        steps:
+          - " 0"
+          - " 1"
+          - " 2"
+          - " 3"
+      - type: label
+        text: "0： §7不使用§r\n1： §a所有敌人近战伤害提升25%%,箭矢强度提升5点§r\n2： §b所有敌人近战伤害提升50%%,箭矢强度提升8点§r\n3： §c所有敌人近战伤害提升100%%,箭矢强度提升12点\n\n"
+      - type: step_slider
+        text: "独奏乐"
+        default-step: "%objective_score_{dark_tag_6}%"
+        steps:
+          - " 0"
+          - " 1"
+          - " 2"
+          - " 3"
+      - type: label
+        text: "0： §7不使用§r\n1： §a所有[诡秘侍者]获得10点护甲与5点韧性,箭矢强度提升至120%%§r\n2： §b所有[诡秘侍者]获得20点护甲与10点韧性,箭矢强度提升至160%%§r\n3： §c所有[诡秘侍者]获得30点护甲与20点韧性,箭矢强度提升至320%%\n\n"
+      - type: step_slider
+        text: "颓废"
+        default-step: "%objective_score_{dark_tag_7}%"
+        steps:
+          - " 0"
+          - " 0"
+          - " 2"
+      - type: label
+        text: "0： §7不使用§r\n2： §b每次阶段切换随机获得3级负面药水效果,持续30秒\n\n"
+      - type: step_slider
+        text: "流浪"
+        default-step: "%objective_score_{dark_tag_8}%"
+        steps:
+          - " 0"
+          - " 0"
+          - " 2"
+      - type: label
+        text: "0： §7不使用§r\n2： §b受到[秘偶]攻击时,获得缓慢II,持续3秒\n\n"
+      - type: step_slider
+        text: "沙哑"
+        default-step: "%objective_score_{dark_tag_9}%"
+        steps:
+          - " 0"
+          - " 0"
+          - " 2"
+      - type: label
+        text: "0： §7不使用§r\n2： §b使用武器技/阵法时,受到10点真实伤害\n\n"
+      - type: step_slider
+        text: "彷徨"
+        default-step: "%objective_score_{dark_tag_10}%"
+        steps:
+          - " 0"
+          - " 0"
+          - " 2"
+      - type: label
+        text: "0： §7不使用§r\n2： §b每个[秘偶]每秒额外增加8点迟缓程度\n\n"
+      - type: step_slider
+        text: "不甘"
+        default-step: "%objective_score_{dark_tag_11}%"
+        steps:
+          - " 0"
+          - " 0"
+          - " 2"
+      - type: label
+        text: "0： §7不使用§r\n2： §b诡秘侍者分身数量提升6个\n\n"
+      - type: step_slider
+        text: "命运"
+        default-step: "%objective_score_{dark_tag_12}%"
+        steps:
+          - " 0"
+          - " 0"
+          - " 2"
+      - type: label
+        text: "0： §7不使用§r\n2： §b所有紫色玻璃变为灵魂沙,所有黑色砖块变为岩浆块\n\n"
+      - type: step_slider
+        text: "东林"
+        default-step: "%objective_score_{dark_tag_13}%"
+        steps:
+          - " 0"
+          - " 1"
+      - type: label
+        text: "0： §7不使用§r\n1： §a加强[历史中始皇陵]的敌人\n\n"
+      - type: step_slider
+        text: "南岩"
+        default-step: "%objective_score_{dark_tag_14}%"
+        steps:
+          - " 0"
+          - " 1"
+      - type: label
+        text: "0： §7不使用§r\n1： §a加强[历史中火焰魔王洞穴]的敌人\n\n"
+      - type: step_slider
+        text: "西杉"
+        default-step: "%objective_score_{dark_tag_15}%"
+        steps:
+          - " 0"
+          - " 1"
+      - type: label
+        text: "0： §7不使用§r\n1： §a加强[历史中镇妖塔]的敌人\n\n"
+      - type: step_slider
+        text: "北兵"
+        default-step: "%objective_score_{dark_tag_16}%"
+        steps:
+          - " 0"
+          - " 1"
+      - type: label
+        text: "0： §7不使用§r\n1： §a加强[历史中哭声回荡的山谷]的敌人\n\n"
+    actions:
+      - commands: 
+        - "execute as %player_uuid% unless score @s dark_tag_1 matches%result_1% run scoreboard players set @s dark_tag_1%result_1%"
+        - "execute as %player_uuid% unless score @s dark_tag_2 matches%result_3% run scoreboard players set @s dark_tag_2%result_3%"
+        - "execute as %player_uuid% unless score @s dark_tag_3 matches%result_5% run scoreboard players set @s dark_tag_3%result_5%"
+        - "execute as %player_uuid% unless score @s dark_tag_4 matches%result_7% run scoreboard players set @s dark_tag_4%result_7%"
+        - "execute as %player_uuid% unless score @s dark_tag_5 matches%result_9% run scoreboard players set @s dark_tag_5%result_9%"
+        - "execute as %player_uuid% unless score @s dark_tag_6 matches%result_11% run scoreboard players set @s dark_tag_6%result_11%"
+        - "execute as %player_uuid% unless score @s dark_tag_7 matches%result_13% run scoreboard players set @s dark_tag_7%result_13%"
+        - "execute as %player_uuid% unless score @s dark_tag_8 matches%result_15% run scoreboard players set @s dark_tag_8%result_15%"
+        - "execute as %player_uuid% unless score @s dark_tag_9 matches%result_17% run scoreboard players set @s dark_tag_9%result_17%"
+        - "execute as %player_uuid% unless score @s dark_tag_10 matches%result_19% run scoreboard players set @s dark_tag_10%result_19%"
+        - "execute as %player_uuid% unless score @s dark_tag_11 matches%result_21% run scoreboard players set @s dark_tag_11%result_21%"
+        - "execute as %player_uuid% unless score @s dark_tag_12 matches%result_23% run scoreboard players set @s dark_tag_12%result_23%"
+        - "execute as %player_uuid% unless score @s dark_tag_13 matches%result_25% run scoreboard players set @s dark_tag_13%result_25%"
+        - "execute as %player_uuid% unless score @s dark_tag_14 matches%result_27% run scoreboard players set @s dark_tag_14%result_27%"
+        - "execute as %player_uuid% unless score @s dark_tag_15 matches%result_29% run scoreboard players set @s dark_tag_15%result_29%"
+        - "execute as %player_uuid% unless score @s dark_tag_16 matches%result_31% run scoreboard players set @s dark_tag_16%result_31%"
+        - "execute as %player_uuid% run title @s actionbar {\"translate\":\"pcub.dark_tag.saved\"}"
+        - "player; trigger dark_tag_show set 1"

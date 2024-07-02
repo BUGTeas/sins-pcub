@@ -1,0 +1,8 @@
+commands:
+  #诡秘菜单（命令捷径）
+  dark_fight_menu:
+    method: register
+    command: dark_fight_menu
+    actions:
+      - form: dark_fight_menu
+    permission: crossplatforms.command.open

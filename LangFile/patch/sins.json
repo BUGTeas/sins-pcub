@@ -1,0 +1,34 @@
+{
+	"geyser":{
+		"fallback":{},
+		"base":{},
+		"conversion":{
+			"pcub.dark_tag.saved":"§a挑战词条已设置完毕"
+		},
+		"tw":{}
+	},
+	"bedrock":{
+		"fallback":{
+			"pack.name":"§h剑歌dlc材质 v2024.6.30， 适用于盘灵无界互通开服方案",
+			"pack.description":"§c§l禁止用于其他地图！ §r仅限盘灵无界互通服务端使用！"
+		},
+		"base":{},
+		"conversion":{
+			"pack.name":"§h剑歌dlc材质 v2024.6.30， 适用于盘灵无界互通开服方案",
+			"pack.description":"§c§l禁止用于其他地图！ §r仅限盘灵无界互通服务端使用！",
+			"pcub.title.dark_fight":"诡秘挑战说明/辅助工具",
+			"pcub.dark_fight.dark_tag":"挑战词条列表",
+			"pcub.dark_fight.tag_show":"查看当前挑战等级",
+			"pcub.dark_fight.tag_clear":"清空所有挑战词条",
+			"pcub.title.dark_tag":"挑战词条列表",
+			"pcub.content.dark_tag":"设置完毕后别忘了§l按下底部的“保存更改”按钮§r， 否则更改将不被保存！"
+		},
+		"tw":{}
+	},
+	"cross":{
+		"fallback":{},
+		"base":{},
+		"conversion":{},
+		"tw":{}
+	}
+}
