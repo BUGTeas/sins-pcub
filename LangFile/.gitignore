@@ -4,3 +4,5 @@
 !/resources/sins/
 /resources/sins/*
 !/resources/sins/NOTICE
+/package-lock.json
+/package.json
