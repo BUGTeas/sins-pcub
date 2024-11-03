@@ -2,7 +2,7 @@
 
 注意：根据实际情况修改并单独制作即可，不是每一项都必需
 
-## 修改数据包
+## 构建数据包
 
 罪如歌数据包部分内容的 JSON 文本格式无法在 1.20.3+（包括 Geyser）中正确解析的修复。起因是布尔值被写成字符串格式，如：`{bold:"false",italic:"true",text:"文本内容"}`
 
@@ -10,11 +10,13 @@
 
 你也可以将修改过的部分保持原目录结构单独保存，作为一个独立数据包，或者将 `data` 目录合并到本源码目录下的 `DataPack/data` 中，只需确保其加载层级比罪如歌数据包本体高即可生效。
 
-将 `DataPack` 目录中的数据包打包，命名为 `sins_pcub.zip`
+将 `DataPack` 目录中的所有文件打包压缩，建议命名为 `sins_pcub.zip`
 
-## 修改语言文件：
 
-如果您希望对游戏内的本地化文本进行修改，你可能需要修改语言文件。
+
+## 构建语言文件
+
+如果需要使用一个特定的罪如歌历史版本，或者对游戏内的本地化文本进行修改，您可能需要使用本可选组件的源代码重新生成一份适用于 Geyser 的语言文件。因为成品包均以最新版本的罪如歌为基础生成，直接使用可能会导致基岩版资源包版本对不上，导致文本内容不正确。
 
 在互通服中，原先由 JE 资源包加载的本地化文本都需要合并为单个 JSON 后由 Geyser 加载。但 UI 界面是个例外，需要使用资源包进行加载。
 
@@ -38,9 +40,17 @@
    - overrides（**重要!** 包含了 Geyser 自定义语言文件，“.json”格式，需要与 Geyser 原有文件进行合并，否则部分内容显示乱码！合并步骤见配置文件合并）
    - texts（由基岩客户端资源包加载，“.lang”格式，通常用于显示 UI 内容）
 
-## 修改资源包
 
-资源包属于人工手动移植，没有生成的途径，故不提供源代码，可以直接从发布了的成品中薅过来。您可以在 `PanGuContinentUnbounded-server/plugins/Geyser-Spigot/packs` 中找到它们，虽然是 zip 格式，但其内部是标准的基岩版资源包结构。
+
+## 构建资源包
+
+将构建好的 `.lang` 语言文件放入 `ResourcePack/texts` 目录下，然后将 `ResourcePack` 目录中的所有文件打包压缩，改后缀为 `.mcpack` 即可直接导入到基岩版客户端中
+
+如需在服务端加载，将其放入 `plugins/Geyser-Spigot/packs` 目录下即可，建议命名为 `SINSDedicatedPack.zip`。
+
+若您正在制作一个独立的修改版，请更改 `manifest.json` 中的 `name` 值以及所有 UUID，以确保这个修改版本不会和原版搞混甚至冲突。
+
+
 
 ## 配置文件
 
@@ -54,6 +64,8 @@ Config
 ```
 
 您只需要将它们合并到服务端目录中即可。
+
+
 
 ## 配置文件合并
 
@@ -73,5 +85,5 @@ ConfigMerge
 需要注意，这些配置文件不能直接通过文件覆盖合并的方式安装，需要按照 YAML 和 JSON 语法对其进行内容合并。
 
 不过服务端部署包中自带了命令行工具 `yq` 和 `jq`（`tools` 目录下），可以实现自动合并。借助自动合并脚本即可完成安装：
-1. 解压合并成品包得到 `sins_pcub_merge` 文件夹，或者下载通用自定义合并脚本 (https://github.com/BUGTeas/pcub-merge) 或 (https://gitee.com/BugTeaON/pcub-merge)，得到 `custom_merge` 文件夹，在接下来的步骤中我将其称作**自动合并目录**，且应位于服务端根目录下
-2. 将 `ConfigMerge/plugins` 复制到自动合并目录下，之后就可以像使用说明步骤那样进行自动合并了
+1. 下载自定义配置文件自动合并脚本 (https://github.com/BUGTeas/pcub-merge) 或 (https://gitee.com/BugTeaON/pcub-merge)，得到 `custom_merge` 文件夹 (建议将其更名为 `sins_pcub_merge`)，将其放入服务端根目录下
+2. 将 `ConfigMerge/plugins` 放入这个目录即可
