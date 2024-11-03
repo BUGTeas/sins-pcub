@@ -1,3 +1,4 @@
 /DataPack/data/*
 !/DataPack/data/pcub
 !/DataPack/data/sins_pcub
+/ResourcePack/texts/*.lang
