@@ -4,6 +4,14 @@
 		//剑歌DLC（罪如歌）
 		"minecraft:carrot_on_a_stick": [
 			{
+				"name": "jg_brush",
+				"icon": "panling_axe5",
+				"custom_model_data": 62,
+                "texture_size": 52,
+				"allow_offhand": true,
+				"display_handheld": true
+			},
+			{
 				"name": "jg_redstone",
 				"icon": "redstone_dust",
 				"custom_model_data": 2385,
