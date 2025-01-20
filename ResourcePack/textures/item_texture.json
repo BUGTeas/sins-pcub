@@ -1,6 +1,6 @@
 {
 	"texture_name" : "atlas.items",
 	"texture_data" : {
-		"jg_red_banner": {  "textures":  "textures/jg/items/qizhi" }
+		"jg_qizhi": {  "textures":  "textures/jg/items/qizhi_icon" }
 	}
 }
