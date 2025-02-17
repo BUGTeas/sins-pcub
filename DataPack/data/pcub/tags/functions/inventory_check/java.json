@@ -1,6 +1,6 @@
 {
 	"replace": false,
 	"values": [
-		"sins_pcub:tick_java"
+		"sins_pcub:inventory_check/common"
 	]
 }

@@ -1,0 +1,7 @@
+{
+	"replace": false,
+	"values": [
+		"sins_pcub:inventory_check/common",
+		"sins_pcub:inventory_check/bedrock"
+	]
+}
