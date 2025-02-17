@@ -1,28 +1,30 @@
 {
 	"format_version": "1",
 	"items": {
-		//剑歌DLC（罪如歌）
+		// 剑歌DLC（罪如歌）
 		"minecraft:carrot_on_a_stick": [
 			{
-				"name": "jg_brush",
-				"icon": "panling_axe5",
 				"custom_model_data": 62,
-                "texture_size": 52,
+				"name": "jg_brush",
 				"allow_offhand": true,
+				"icon": "panling_axe5",
+                "texture_size": 52,
 				"display_handheld": true
 			},
 			{
-				"name": "jg_redstone",
-				"icon": "redstone_dust",
 				"custom_model_data": 2385,
-                "texture_size": 52,
-				"allow_offhand": false
+				"name": "jg_redstone",
+				"allow_offhand": false,
+				"icon": "redstone_dust",
+                "texture_size": 52
 			}
 		],
+		// 旌旗
 		"minecraft:red_banner": [
 			{
+				"custom_model_data": 0,
 				"name": "jg_qizhi",
-				"custom_model_data": 0
+				"display_name": "item.banner.red.name"
 			}
 		]
 	}
