@@ -1,7 +1,7 @@
 {
 	"format_version": "1",
 	"items": {
-		// 剑歌DLC（罪如歌）
+		// 罪之笔、硬币（旧）
 		"minecraft:carrot_on_a_stick": [
 			{
 				"custom_model_data": 62,
@@ -25,6 +25,18 @@
 				"custom_model_data": 0,
 				"name": "jg_qizhi",
 				"display_name": "item.banner.red.name"
+			}
+		],
+		// 副手物品
+		// 命运硬币
+		"minecraft:redstone": [
+			{
+				"custom_model_data": 0,
+				"name": "redstone_allow_offhand",
+				"allow_offhand": true,
+				"display_name": "item.redstone.name",
+				"icon": "redstone_dust",
+                "texture_size": 52
 			}
 		]
 	}
