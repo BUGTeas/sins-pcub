@@ -20,8 +20,8 @@
 2. 准备罪如歌材质包，将其解压到 `resources/sins` 目录下（此目录下有 `assets` 文件夹即可）
 3. 安装依赖项：
    - (必要) 盘灵无界语言文件处理，可通过下方任一方式安装：
-     - Gitee：`npm install git+https://gitee.com/BugTeaON/pcub-locale#v1`
-     - GitHub：`npm install git+https://github.com/BUGTeas/pcub-locale#v1`
+     - Gitee：`npm install git+https://gitee.com/BugTeaON/pcub-locale#v2`
+     - GitHub：`npm install git+https://github.com/BUGTeas/pcub-locale#v2`
    - (可选) 繁体转换器，否则输出的繁体语言文件（`zh_tw` 及 `zh_hk`）都将是简体内容：
      - `npm install git+https://github.com/BYVoid/OpenCC`
 4. 执行命令 `node index.js` 开始生成
