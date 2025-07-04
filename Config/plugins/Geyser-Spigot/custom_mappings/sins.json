@@ -4,12 +4,10 @@
 		// 罪之笔、硬币（旧）
 		"minecraft:carrot_on_a_stick": [
 			{
-				"custom_model_data": 62,
+				"custom_model_data": 72,
 				"name": "jg_brush",
 				"allow_offhand": true,
-				"icon": "panling_axe5",
-                "texture_size": 52,
-				"display_handheld": true
+                "texture_size": 52
 			},
 			{
 				"custom_model_data": 2385,

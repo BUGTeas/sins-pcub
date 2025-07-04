@@ -1,6 +1,7 @@
 {
 	"texture_name" : "atlas.items",
 	"texture_data" : {
-		"jg_qizhi": {  "textures":  "textures/jg/items/qizhi_icon" }
+		"jg_qizhi": {  "textures":  "textures/jg/items/qizhi_icon" },
+		"jg_brush": {  "textures":  "textures/jg/items/brush" }
 	}
 }
