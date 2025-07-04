@@ -3,25 +3,25 @@ forms:
   #诡秘挑战主菜单
   dark_fight_menu:
     type: simple_form
-    title: "pcub.title.dark_fight"
-    content: "§a§l● 挑战说明\n§r你可以通过第一页的§b[挑战列表]§r来选择这场战斗中的[挑战词条]，开始战斗时,若你距离按钮最近,则你选择的所有§b[挑战词条]§r等级的§b总和§r即为你们本次战斗的§b[诡秘挑战等级]。\n例:§eCreazeny§r战斗开始时§b距离按钮最近§r并选择了§b三§r个§b三§r级[挑战],则他与另外两名队友的最终挑战难度为:§b[诡秘挑战-九]§r。\n\n§a§l● 挑战等级\n§r全名为§b诡秘挑战等级§r,其是你力量的体现,亦是你与同伴共同挑战过高难度副本的证明,当你突破自我,达到部分等级时,将会获得§c罪之石§r的奖励,且当战斗结束时,每§b1§r级§b诡秘挑战等级§r都将提供§b3%%§r的概率获得一颗§c罪之石\n\n§7§l若丢失了这本书....那恐怕很难得到第二本了\n"
+    title: "title.dark.fight.tag"
+    content: "content.dark.fight.tag"
     buttons: 
-      - text: "pcub.dark_fight.dark_tag"
+      - text: "dark.fight.tag.list"
         actions:
           - form: dark_tag_menu
-      - text: "pcub.dark_fight.tag_show"
+      - text: "dark.fight.tag.show"
         actions:
           - commands: "player; trigger dark_tag_show set 1"
-      - text: "pcub.dark_fight.tag_clear"
+      - text: "dark.fight.tag.clear"
         actions:
           - commands: "player; trigger dark_tag_clear set 1"
   #诡秘挑战词条列表
   dark_tag_menu:
     type: custom_form
-    title: "pcub.title.dark_tag"
+    title: "title.dark.fight.tag.list"
     components:
       - type: label
-        text: "pcub.content.dark_tag"
+        text: "content.dark.fight.tag.list"
       - type: step_slider
         text: "协奏歌"
         default-step: "%objective_score_{dark_tag_1}%"

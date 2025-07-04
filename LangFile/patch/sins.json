@@ -11,18 +11,19 @@
 	"bedrock":{
 		"fallback":{
 			"pack.name":"§6罪如歌互通§h 基岩端资源包 v2025.1.21",
-			"pack.description":"§c§l禁止用于其他地图！ §r仅限盘灵无界互通套件使用！"
+			"pack.description":"适用于罪如歌专用 Java - 基岩双端互通套件"
 		},
 		"base":{},
 		"conversion":{
 			"pack.name":"§6罪如歌互通§h 基岩端资源包 v2025.1.21",
-			"pack.description":"§c§l禁止用于其他地图！ §r仅限盘灵无界互通套件使用！",
-			"pcub.title.dark_fight":"诡秘挑战说明/辅助工具",
-			"pcub.dark_fight.dark_tag":"挑战词条列表",
-			"pcub.dark_fight.tag_show":"查看当前挑战等级",
-			"pcub.dark_fight.tag_clear":"清空所有挑战词条",
-			"pcub.title.dark_tag":"挑战词条列表",
-			"pcub.content.dark_tag":"设置完毕后别忘了§l按下底部的“保存更改”按钮§r， 否则更改将不被保存！"
+			"pack.description":"适用于罪如歌专用 Java - 基岩双端互通套件",
+			"title.dark.fight.tag":"诡秘挑战说明/辅助工具",
+			"content.dark.fight.tag": "§a§l---------挑战说明---------\n§r你可以通过第一页的§b[挑战列表]§r来选择这场战斗中的[挑战词条],开始战斗时,若你距离按钮最近,则你选择的所有§b[挑战词条]§r等级的§b总和§r即为你们本次战斗的§b[诡秘挑战等级]。\n例:§eCreazeny§r战斗开始时§b距离按钮最近§r并选择了§b三§r个§b三§r级[挑战],则他与另外两名队友的最终挑战难度为:§b[诡秘挑战-九]§r。\n\n§a§l---------挑战等级---------\n§r全名为§b诡秘挑战等级§r,其是你力量的体现,亦是你与同伴共同挑战过高难度副本的证明,当你突破自我,达到部分等级时,将会获得§c罪之石§r的奖励,且当战斗结束时,每§b1§r级§b诡秘挑战等级§r都将提供§b3%%§r的概率获得一颗§c罪之石\n\n§7§l若丢失了这本书....那恐怕很难得到第二本了\n",
+			"dark.fight.tag.list":"挑战词条列表",
+			"dark.fight.tag.show":"查看当前挑战等级",
+			"dark.fight.tag.clear":"清空所有挑战词条",
+			"title.dark.fight.tag.list":"挑战词条列表",
+			"content.dark.fight.tag.list":"设置完毕后别忘了§l按下底部的“保存更改”按钮§r， 否则更改将不被保存！"
 		},
 		"tw":{}
 	},
