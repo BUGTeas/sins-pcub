@@ -1,0 +1,6 @@
+[
+    {
+        "function": "set_nbt",
+        "tag": "{PublicBukkitValues: {'pcub:run_command': '/forms open sins_book0'}, CustomModelData: 1, pcub_patch_ver: 0}"
+    }
+]

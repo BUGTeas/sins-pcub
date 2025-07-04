@@ -188,3 +188,33 @@ forms:
         - "execute as %player_uuid% unless score @s dark_tag_16 matches%result_31% run scoreboard players set @s dark_tag_16%result_31%"
         - "execute as %player_uuid% run title @s actionbar {\"translate\":\"pcub.dark_tag.saved\"}"
         - "player; trigger dark_tag_show set 1"
+  # 墨踏
+  sins_book0:
+    type: simple_form
+    title: "dlc.0.book.title"
+    content: "dlc.0.book.story"
+    buttons: 
+      - text: "dlc.0.book.tag.1"
+        actions:
+          - commands: "player; trigger sins.book set 1"
+      - text: "dlc.0.book.tag.2"
+        actions:
+          - commands: "player; trigger sins.book set 2"
+      - text: "dlc.0.book.tag.3"
+        actions:
+          - commands: "player; trigger sins.book set 3"
+  # 子午
+  sins_book1:
+    type: simple_form
+    title: "dlc.1.book.title"
+    content: "dlc.1.book.story"
+    buttons: 
+      - text: "dlc.1.book.tag.1"
+        actions:
+          - commands: "player; trigger sins.book set 1"
+      - text: "dlc.1.book.tag.2"
+        actions:
+          - commands: "player; trigger sins.book set 2"
+      - text: "dlc.1.book.tag.3"
+        actions:
+          - commands: "player; trigger sins.book set 3"
