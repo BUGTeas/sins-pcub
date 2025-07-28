@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.jg.brush.firstperson_righthand": {
+			"loop": true,
+			"bones": {
+				"display_transform_3": {
+					"rotation": [0, 0, 0],
+					"position": [1.13, 3.2, 1.13]
+				},
+				"display_transform_2": {
+					"rotation": [0, -90, 0]
+				},
+				"display_transform_1": {
+					"rotation": [0, 0, 150],
+					"scale": [0.68, 0.68, 0.35]
+				}
+			}
+		},
+		"animation.jg.brush.firstperson_lefthand": {
+			"loop": true,
+			"bones": {
+				"display_transform_3": {
+					"rotation": [0, 0, 0],
+					"position": [1.13, 3.2, 1.13]
+				},
+				"display_transform_2": {
+					"rotation": [0, 90, 0]
+				},
+				"display_transform_1": {
+					"rotation": [0, 0, -150],
+					"scale": [0.68, 0.68, 0.35]
+				}
+			}
+		}
+	}
+}
