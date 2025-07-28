@@ -19,8 +19,8 @@
         "base_3rd_left": "animation.pcub.java_transform.base.thirdperson_lefthand",
         "base_1st_right": "animation.pcub.java_transform.base.firstperson_righthand",
         "base_1st_left": "animation.pcub.java_transform.base.firstperson_lefthand",
-        "thirdperson_righthand": "animation.pcub.java_transform.generated.thirdperson_righthand",
-        "thirdperson_lefthand": "animation.pcub.java_transform.generated.thirdperson_righthand",
+        "thirdperson_righthand": "animation.jg.brush.thirdperson_righthand",
+        "thirdperson_lefthand": "animation.jg.brush.thirdperson_lefthand",
         "firstperson_righthand": "animation.jg.brush.firstperson_righthand",
         "firstperson_lefthand": "animation.jg.brush.firstperson_lefthand"
       },
